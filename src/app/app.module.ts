@@ -4,11 +4,13 @@ import { CoursesComponent } from './courses.component';
 
 import { AppComponent } from './app.component';
 import { CoursesService } from './courses.service';
+import { AuthorsComponent } from './authors/authors.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CoursesComponent
+    CoursesComponent,
+    AuthorsComponent
   ],
   imports: [
     BrowserModule

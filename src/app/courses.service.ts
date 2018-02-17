@@ -1,7 +1,7 @@
 
 
 export class CoursesService {
-    getCourses(){
-      return ['course1', 'course2', 'course3'];
+    getAuthors(){
+      return ['Ernest Hemingway', 'F. Scott Fitzgerald', 'J.D. Salinger'];
     }
 }

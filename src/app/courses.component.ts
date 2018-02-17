@@ -3,20 +3,20 @@ import { CoursesService } from './courses.service';
 @Component({
   selector: 'courses',
   template: `
-      <h2>{{"Title: " + title}}</h2>
+      <h2>{{"3 Authors:"}}</h2>
       <ul>
-        <li *ngFor="let course of courses">
-          {{course}}
+        <li *ngFor="let author of authors">
+          {{author}}
         </li>
       </ul>
       `
 })
 export class CoursesComponent {
   title = 'List of courses';
-  courses;
+  authors;
 
   constructor(service: CoursesService){
-    this.courses = service.getCourses();
+    this.authors = service.getAuthors();
   }
 
 }
