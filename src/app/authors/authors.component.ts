@@ -37,8 +37,9 @@ export class AuthorsComponent implements OnInit {
 // onKeyUp($event){
 //   console.log($event.target.value);
 // }
-onKeyUp(email){
-  console.log(email);
+email = "me@example.com";
+onKeyUp(){
+  console.log(this.email);
 }
 
 }
