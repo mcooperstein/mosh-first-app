@@ -6,6 +6,8 @@
   <li *ngFor="let author of authors">{{author}}</li>
 </ul>
 <!-- <input placeholder="Enter a word" (keyup)="onKeyUp($event)"> -->
-<input placeholder="Enter a word" (keyup.enter)="onKeyUp()">
+<!-- <input placeholder="Enter a word" (keyup.enter)="onKeyUp($event)"> -->
+<!-- template variable -->
+<input placeholder = "enter your email" #email (keyup.enter)="onKeyUp(email.value)">
 <button class="btn btn-primary" [class.active]="isActive" (click)="onSave($event)">Click Me!</button>
 </div>
