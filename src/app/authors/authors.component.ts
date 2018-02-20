@@ -26,6 +26,16 @@ export class AuthorsComponent implements OnInit {
     $event.stopPropagation();
     console.log("button was clicked", $event);
   }
+  /*
+  onKeyUp($event){
+    if($event.keyCode===13){
+          console.log("enter was pressed", $event);
+    }
 
+  }
+*/
+onKeyUp(){
+  console.log("Enter was pressed");
+}
 
 }

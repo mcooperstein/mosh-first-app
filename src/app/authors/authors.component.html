@@ -5,5 +5,7 @@
 <ul>
   <li *ngFor="let author of authors">{{author}}</li>
 </ul>
+<!-- <input placeholder="Enter a word" (keyup)="onKeyUp($event)"> -->
+<input placeholder="Enter a word" (keyup.enter)="onKeyUp()">
 <button class="btn btn-primary" [class.active]="isActive" (click)="onSave($event)">Click Me!</button>
 </div>
