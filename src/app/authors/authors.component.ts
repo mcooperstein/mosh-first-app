@@ -9,6 +9,7 @@ import { AuthorsService } from '../authors.service';
 export class AuthorsComponent implements OnInit {
 
   title = "3 Authors:";
+  isActive=false;
   authors;
   constructor(service: AuthorsService) {
     this.authors = service.getAuthors();
@@ -17,6 +18,14 @@ export class AuthorsComponent implements OnInit {
   ngOnInit() {
   }
 
+  onDivClick($event){
+    console.log("Div was clicked", $event);
+  }
+
+  onSave($event){
+    $event.stopPropagation();
+    console.log("button was clicked", $event);
+  }
 
 
 }

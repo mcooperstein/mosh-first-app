@@ -1,5 +1,9 @@
-<h2>{{title}}</h2>
+
+
+<div (click)="onDivClick($event)">
+<h2 [style.color]="isActive?'blue':'red'">{{title}}</h2>
 <ul>
   <li *ngFor="let author of authors">{{author}}</li>
 </ul>
-<button class="btn btn-primary">Click Me</button>
+<button class="btn btn-primary" [class.active]="isActive" (click)="onSave($event)">Click Me!</button>
+</div>
