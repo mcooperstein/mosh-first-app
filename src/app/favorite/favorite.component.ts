@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class FavoriteComponent implements OnInit {
 
   good = true;
+  isFavorite=true;
 
   constructor() { }
 
@@ -20,6 +21,10 @@ export class FavoriteComponent implements OnInit {
 
   dislike(){
     this.good = false;
+  }
+
+  onToggle(){
+    this.isFavorite = !this.isFavorite;
   }
 
 }

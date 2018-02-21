@@ -7,3 +7,4 @@
 <ng-template #bad>
 <span style="font-size:30px" class="glyphicon glyphicon-star-empty fa-lg"></span>
 </ng-template>
+<span style="font-size:50px" class="glyphicon" [class.glyphicon-star]="isFavorite" [class.glyphicon-star-empty]="!isFavorite" (click)="onToggle()"></span>
