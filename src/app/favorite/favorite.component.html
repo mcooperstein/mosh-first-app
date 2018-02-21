@@ -1,0 +1,9 @@
+<h4>Did you like this book?</h4>
+<button class="btn btn-success" (click)="like()">YES!</button>
+<button class="btn btn-danger" (click)="dislike()">NO!</button>
+<div *ngIf="good; else bad">
+<span style="font-size:30px" class="glyphicon glyphicon-star fa-lg"></span>
+</div>
+<ng-template #bad>
+<span style="font-size:30px" class="glyphicon glyphicon-star-empty fa-lg"></span>
+</ng-template>
