@@ -15,10 +15,10 @@ export class TitlePipe implements PipeTransform {
         //if(newStr[i]==="the"|| newStr[i]==="of" || newStr[i]==="and" || newStr[i]==="by"){
         if(prepositions.includes(newStr[i])) {
           if(i===0){
-            newStr[i]= newStr[i][0].toUpperCase()+newStr[i].slice(1);
+            newStr[i]= newStr[i][0].toUpperCase()+newStr[i].slice(1).toLowerCase();
           }
         } else {
-          newStr[i]= newStr[i][0].toUpperCase()+newStr[i].slice(1);
+          newStr[i]= newStr[i][0].toUpperCase()+newStr[i].slice(1).toLowerCase();
         }
       }
       return newStr.join(" ");
