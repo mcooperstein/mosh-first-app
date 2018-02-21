@@ -10,6 +10,7 @@ import { SummaryPipe } from './summary.pipe';
 import { TitlePipe } from './titlecase.pipe';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { StarComponent } from './star/star.component';
+import { PanelComponent } from './panel/panel.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import { StarComponent } from './star/star.component';
     SummaryPipe,
     FavoriteComponent,
     TitlePipe,
-    StarComponent
+    StarComponent,
+    PanelComponent
   ],
   imports: [
     BrowserModule,

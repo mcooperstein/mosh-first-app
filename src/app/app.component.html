@@ -1,3 +1,10 @@
 <h1>Angular</h1>
-<app-star [isFavorite]="post.isFavorite" (change)="onFavoriteChanged()"></app-star>
-<app-authors></app-authors>
+<!-- <app-star [isFavorite]="post.isFavorite" (change)="onFavoriteChanged($event)"></app-star>
+<app-authors></app-authors> -->
+<app-panel>
+  <ng-container class="heading">Heading</ng-container>
+  <div class="body">
+    <h2>Body</h2>
+    <p>Some content here...</p>
+  </div>
+</app-panel>
