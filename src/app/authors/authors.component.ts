@@ -41,5 +41,9 @@ email = "me@example.com";
 onKeyUp(){
   console.log(this.email);
 }
+search = "";
+onSearch(){
+  this.search = this.search;
+}
 
 }
