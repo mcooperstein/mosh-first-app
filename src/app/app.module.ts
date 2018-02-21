@@ -9,6 +9,7 @@ import { AuthorsService } from './authors.service';
 import { SummaryPipe } from './summary.pipe';
 import { TitlePipe } from './titlecase.pipe';
 import { FavoriteComponent } from './favorite/favorite.component';
+import { StarComponent } from './star/star.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +17,8 @@ import { FavoriteComponent } from './favorite/favorite.component';
     AuthorsComponent,
     SummaryPipe,
     FavoriteComponent,
-    TitlePipe
+    TitlePipe,
+    StarComponent
   ],
   imports: [
     BrowserModule,
