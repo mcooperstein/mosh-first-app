@@ -11,6 +11,7 @@ import { TitlePipe } from './titlecase.pipe';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { StarComponent } from './star/star.component';
 import { PanelComponent } from './panel/panel.component';
+import { LikeComponent } from './like/like.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import { PanelComponent } from './panel/panel.component';
     FavoriteComponent,
     TitlePipe,
     StarComponent,
-    PanelComponent
+    PanelComponent,
+    LikeComponent
   ],
   imports: [
     BrowserModule,
