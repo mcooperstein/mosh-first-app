@@ -21,13 +21,28 @@ export class AppComponent {
     likesCount: 10
   }
 
-  courses = [
-    {id:1,name:'course 1'},
-    {id:2,name:'course 2'},
-    {id:3,name:'course 3'}
-  ];
+  courses;
 
   viewMode = 'map';
 
+  onAdd(){
+    this.courses.push({id:4, name:'course 4'});
+  }
+
+  onRemove(course){
+      let index = this.courses.indexOf(course);
+      this.courses.splice(index,1);
+  }
+
+  loadCourses(){
+    this.courses = [
+      {id:1,name:'course 1'},
+      {id:2,name:'course 2'},
+      {id:3,name:'course 3'}
+    ];
+  }
+  trackCourse(index, course){
+    return course? course.id:undefined;
+  }
 
 }
