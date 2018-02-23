@@ -1,0 +1,32 @@
+<!-- <div>
+  <h1 (click)="toggleShipping()">Shipping Details</h1>
+  <div *ngIf="showShipping">
+    <h2>Shipping Details Content</h2>
+  </div>
+</div>
+<div>
+  <h1 (click)="toggleBilling()">Billing Details</h1>
+  <div *ngIf="showBilling">
+    <h2>Billing Details Content</h2>
+  </div>
+</div> -->
+<div class="panel-group">
+  <div class="panel panel-default">
+    <div class="panel-heading" (click)="toggleShipping()">
+      <h4 class="panel-title">
+        <a href="#">Shipping Details</a>
+      </h4>
+    </div>
+    <div *ngIf="showShipping">
+      <div class="panel-body">Shipping Details Content</div>
+    </div>
+    <div class="panel-heading" (click)="toggleBilling()">
+      <h4 class="panel-title">
+        <a href="#">Billing Details</a>
+      </h4>
+    </div>
+    <div *ngIf="showBilling">
+      <div class="panel-body">Billing Details Content</div>
+    </div>
+  </div>
+</div>
