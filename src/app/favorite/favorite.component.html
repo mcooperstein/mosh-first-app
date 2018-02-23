@@ -1,4 +1,4 @@
-<h4>Did you like this book?</h4>
+<!-- <h4>Did you like this book?</h4>
 <button class="btn btn-success" (click)="like()">YES!</button>
 <button class="btn btn-danger" (click)="dislike()">NO!</button>
 <div *ngIf="good; else bad">
@@ -6,5 +6,7 @@
 </div>
 <ng-template #bad>
 <span style="font-size:30px" class="glyphicon glyphicon-star-empty fa-lg"></span>
-</ng-template>
-<span style="font-size:50px" class="glyphicon" [class.glyphicon-star]="isFavorite" [class.glyphicon-star-empty]="!isFavorite" (click)="onToggle()"></span>
+</ng-template> -->
+<!-- <span style="font-size:50px" class="glyphicon" [class.glyphicon-star]="isFavorite" [class.glyphicon-star-empty]="!isFavorite" (click)="onToggle()"></span> -->
+<!-- ngClass is an attribute directive -->
+<span style="font-size:50px" class="glyphicon" [ngClass]="{'glyphicon-star': isFavorite, 'glyphicon-star-empty': !isFavorite}" (click)="onToggle()"></span>

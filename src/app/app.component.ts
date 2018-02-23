@@ -24,8 +24,10 @@ export class AppComponent {
   courses;
 
   viewMode = 'map';
+  canSave = true;
 
   onAdd(){
+    this.canSave=!this.canSave;
     this.courses.push({id:4, name:'course 4'});
   }
 
@@ -44,5 +46,6 @@ export class AppComponent {
   trackCourse(index, course){
     return course? course.id:undefined;
   }
+
 
 }
