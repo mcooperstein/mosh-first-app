@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-zippy',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./zippy.component.css']
 })
 export class ZippyComponent implements OnInit {
-
+  @Input('title') title: string;
   showBilling = false;
   showShipping = false;
 

@@ -10,7 +10,7 @@
     <h2>Billing Details Content</h2>
   </div>
 </div> -->
-<div class="panel-group">
+<!-- <div class="panel-group">
   <div class="panel panel-default">
     <div class="panel-heading" (click)="toggleShipping()">
       <h4 class="panel-title">
@@ -28,5 +28,27 @@
     <div *ngIf="showBilling">
       <div class="panel-body">Billing Details Content</div>
     </div>
+  </div>
+</div> -->
+<div class="zippy">
+  <div [class.expanded]="showShipping" class="zippy-heading" (click)="toggleShipping()">
+    Shipping Details
+    <span class="glyphicon" [ngClass]="{
+      'glyphicon-chevron-up': showShipping,
+      'glyphicon-chevron-down': !showShipping
+    }"></span>
+  </div>
+  <div class="zippy-body" *ngIf="showShipping">
+    Shipping Details Content
+  </div>
+  <div [class.expanded]="showBilling" class="zippy-heading" (click)="toggleBilling()">
+    Billing Details
+    <span class="glyphicon" [ngClass]="{
+      'glyphicon-chevron-up': showBilling,
+      'glyphicon-chevron-down': !showBilling
+    }"></span>
+  </div>
+  <div class="zippy-body" *ngIf="showBilling">
+    Billing Details Content
   </div>
 </div>
