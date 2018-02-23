@@ -8,5 +8,13 @@
     <label for="comment">Comment</label>
     <textarea ngModel name="comments" id="comment" cols="20" rows="5" class="form-control"></textarea>
   </div>
-  <button class="btn btn-primary">Submit</button>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" ngModel name="isSubscribed">Subscribe to Mailing List
+    </label>
+  </div>
+  <p>
+    {{f.value | json}}
+  </p>
+  <button [disabled]="!f.valid" class="btn btn-primary">Submit</button>
 </form>
