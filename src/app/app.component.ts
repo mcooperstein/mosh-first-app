@@ -21,4 +21,6 @@ export class AppComponent {
     likesCount: 10
   }
 
+  courses = [1,2];
+
 }
