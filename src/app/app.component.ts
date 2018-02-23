@@ -47,5 +47,11 @@ export class AppComponent {
     return course? course.id:undefined;
   }
 
+  task = {
+    title: 'Review Application',
+    assignee: {
+      name: 'John Smith'
+    }
+  }
 
 }
